@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'pages/index'
   resources :matchups
   resources :brackets
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -10,7 +11,7 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
 
   # Defines the root path route ("/")
-  root "leagues#index"
+  root "pages#index"
 
   resources :league_users
   resources :leagues
