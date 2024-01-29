@@ -1,0 +1,22 @@
+<%= form_with(model: matchup) do |form| %>
+  <% if matchup.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(matchup.errors.count, "error") %> prohibited this matchup from being saved:</h2>
+
+      <ul>
+        <% matchup.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :bracket_id, style: "display: block" %>
+    <%= form.number_field :bracket_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

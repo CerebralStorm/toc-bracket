@@ -3,7 +3,6 @@
 <%= render @league %>
 
 <div>
-  <%= link_to "Edit this league", edit_league_path(@league) %> |
   <%= link_to "Back to leagues", leagues_path %>
 
   <%= form_with model: LeagueUser.new, method: :post do |form| %>
@@ -15,6 +14,12 @@
 
   <% @league.users.each do |user| %>
     <p><%= user.email %></p>
+  <% end %>
+
+  <%= form_with model: Bracket.new, method: :post do |form| %>
+    <%= form.hidden_field :league_id, value: @league.id %>
+    <%= form.hidden_field :user_id, value: current_user.id %>
+    <%= form.submit "Fill our your bracket" %>
   <% end %>
 
   <%= button_to "Destroy this league", @league, method: :delete %>

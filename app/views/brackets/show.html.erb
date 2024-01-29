@@ -7,4 +7,7 @@
   <%= link_to "Back to brackets", brackets_path %>
 
   <%= button_to "Destroy this bracket", @bracket, method: :delete %>
+
+  <%= @bracket.matchups.each do |matchup| %>
+  <% end %>
 </div>

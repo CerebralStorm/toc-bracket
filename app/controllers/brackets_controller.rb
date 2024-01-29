@@ -1,5 +1,6 @@
 class BracketsController < ApplicationController
   before_action :set_bracket, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /brackets or /brackets.json
   def index
@@ -65,6 +66,6 @@ class BracketsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def bracket_params
-      params.require(:bracket).permit(:user_id, :integer)
+      params.require(:bracket).permit(:user_id, :league_id)
     end
 end
