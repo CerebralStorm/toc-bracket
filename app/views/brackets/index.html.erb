@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Brackets</h1>
+
+<div id="brackets">
+  <% @brackets.each do |bracket| %>
+    <%= render bracket %>
+    <p>
+      <%= link_to "Show this bracket", bracket %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New bracket", new_bracket_path %>
