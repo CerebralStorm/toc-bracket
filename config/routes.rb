@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   resources :league_users
   resources :leagues
   resources :brackets
-  resources :users
-  resources :chefs
   devise_for :users
+  # resources :users
+  resources :chefs
 end

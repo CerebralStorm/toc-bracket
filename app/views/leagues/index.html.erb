@@ -1,14 +1,21 @@
-<p style="color: green"><%= notice %></p>
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between">
+      <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+        <h2 data-aos="fade-up">Leagues</h2>
+          <%= link_to "Create New league", new_league_path, class: 'btn btn-primary' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- End Hero Section -->
 
-<h1>Leagues</h1>
+<main id="main">
+  <div id="leagues">
+    <% @leagues.each do |league| %>
+      <%= render league %>
+    <% end %>
+  </div>
+</main><!-- End #main -->
 
-<div id="leagues">
-  <% @leagues.each do |league| %>
-    <%= render league %>
-    <p>
-      <%= link_to "Show this league", league %>
-    </p>
-  <% end %>
-</div>
 
-<%= link_to "New league", new_league_path %>
