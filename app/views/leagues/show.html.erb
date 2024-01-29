@@ -6,5 +6,16 @@
   <%= link_to "Edit this league", edit_league_path(@league) %> |
   <%= link_to "Back to leagues", leagues_path %>
 
+  <%= form_with model: LeagueUser.new, method: :post do |form| %>
+    <%= form.hidden_field :league_id, value: @league.id %>
+    <%= form.label :email, "Email:" %>
+    <%= form.text_field :email %>
+    <%= form.submit "Invite User" %>
+  <% end %>
+
+  <% @league.users.each do |user| %>
+    <p><%= user.email %></p>
+  <% end %>
+
   <%= button_to "Destroy this league", @league, method: :delete %>
 </div>
