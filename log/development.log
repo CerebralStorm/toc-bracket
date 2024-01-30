@@ -5452,3 +5452,2336 @@ Completed 200 OK in 20ms (Views: 13.0ms | ActiveRecord: 5.6ms | Allocations: 374
   
 ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
   
+Started GET "/" for ::1 at 2024-01-29 16:12:26 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 646)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 26.9ms | Allocations: 3516)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 9228)
+Completed 200 OK in 33ms (Views: 27.2ms | ActiveRecord: 5.1ms | Allocations: 9702)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 16:12:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 16:12:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 16:12:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 18:20:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 738)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 87.8ms | Allocations: 19098)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 138.5ms | Allocations: 78595)
+Completed 200 OK in 146ms (Views: 129.1ms | ActiveRecord: 11.8ms | Allocations: 82925)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 18:20:01 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 18:20:02 -0700
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 18:20:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:30:26 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 16.8ms | Allocations: 3519)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 8406)
+Completed 200 OK in 25ms (Views: 16.4ms | ActiveRecord: 7.8ms | Allocations: 8660)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:30:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:30:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:30:27 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:36:51 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 16.0ms | Allocations: 3518)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 55.6ms | Allocations: 33140)
+Completed 200 OK in 57ms (Views: 47.3ms | ActiveRecord: 8.6ms | Allocations: 33394)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:36:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:36:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:36:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:37:26 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 2.0ms | Allocations: 752)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 28941)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.4ms | Allocations: 29193)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:37:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:37:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:37:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:37:50 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 649)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 12.8ms | Allocations: 4954)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 33196)
+Completed 200 OK in 23ms (Views: 11.9ms | ActiveRecord: 10.4ms | Allocations: 34126)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:42:30 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 652)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 11.3ms | Allocations: 4851)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 33018)
+Completed 200 OK in 23ms (Views: 14.3ms | ActiveRecord: 8.6ms | Allocations: 33949)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:42:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:42:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:42:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:42:52 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 650)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 8.1ms | Allocations: 4851)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 33043)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 5.5ms | Allocations: 33971)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/leagues/new" for ::1 at 2024-01-29 20:42:55 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 4.4ms | Allocations: 1593)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1873)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 2.2ms | Allocations: 739)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7471)
+Completed 200 OK in 29ms (Views: 14.9ms | ActiveRecord: 3.9ms | Allocations: 12063)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:43:41 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 650)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 8.6ms | Allocations: 4855)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 158)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 33049)
+Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 6.1ms | Allocations: 33977)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:44:01 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 650)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 6.9ms | Allocations: 4853)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 33086)
+Completed 200 OK in 20ms (Views: 15.2ms | ActiveRecord: 3.9ms | Allocations: 34014)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/chefs" for ::1 at 2024-01-29 20:44:03 -0700
+Processing by ChefsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering chefs/index.html.erb within layouts/application
+  [1m[36mChef Load (2.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs"[0m
+  ↳ app/views/chefs/index.html.erb:6
+  Rendered chefs/_chef.html.erb (Duration: 1.2ms | Allocations: 246)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/_chef.html.erb (Duration: 0.0ms | Allocations: 38)
+  Rendered chefs/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 8445)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 1.6ms | Allocations: 739)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 14046)
+Completed 200 OK in 33ms (Views: 23.9ms | ActiveRecord: 5.2ms | Allocations: 14938)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:44:46 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 650)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 7.7ms | Allocations: 4851)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 33034)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 5.3ms | Allocations: 33962)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:45:43 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1643)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1735)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2657)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_user_registrtaion_path' for #<ActionView::Base:0x00000000063d58>):
+     5:           <h2 data-aos="fade-up">Create your account and join a league today!</h2>
+     6:           <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+     7: 
+     8:           <%= link_to 'Sign Up', new_user_registrtaion_path, class: 'btn btn-primary' %>
+     9: 
+    10:           <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+    11: 
+  
+app/views/pages/index.html.erb:8
+Started GET "/" for ::1 at 2024-01-29 20:46:19 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 732)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 6.9ms | Allocations: 4820)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 33077)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 4.6ms | Allocations: 34004)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:46:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:46:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:46:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:46:48 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 732)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 8.1ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 33071)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 5.8ms | Allocations: 33998)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/hero-img.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:47:15 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 699)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 6.2ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 33026)
+Completed 200 OK in 18ms (Views: 13.6ms | ActiveRecord: 3.6ms | Allocations: 33956)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:47:43 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 695)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 9.5ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 33041)
+Completed 200 OK in 22ms (Views: 14.6ms | ActiveRecord: 7.1ms | Allocations: 33968)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:48:52 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 695)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 9.7ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 33049)
+Completed 200 OK in 21ms (Views: 13.3ms | ActiveRecord: 6.7ms | Allocations: 33976)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:49:17 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 672)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 6.7ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 33005)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 4.0ms | Allocations: 33932)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:49:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:49:25 -0700
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:49:25 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:49:52 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 670)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:36
+  Rendered application/_header.html.erb (Duration: 7.1ms | Allocations: 4818)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 33002)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 4.9ms | Allocations: 33929)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:50:47 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 669)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 7.7ms | Allocations: 4835)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 33019)
+Completed 200 OK in 18ms (Views: 12.2ms | ActiveRecord: 5.1ms | Allocations: 33946)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/users/sign_out" for ::1 at 2024-01-29 20:50:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/users/sign_out" for ::1 at 2024-01-29 20:51:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for ::1 at 2024-01-29 20:51:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:52:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:52:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:52:02 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 669)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 9.9ms | Allocations: 4833)
+  Rendered application/_footer.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 33032)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 4.9ms | Allocations: 33917)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/packaging-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/users/sign_out" for ::1 at 2024-01-29 20:52:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/storage-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/logistics-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/cargo-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/warehousing-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/trucking-service.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:56:39 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 593)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 8.0ms | Allocations: 4833)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 32947)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 5.5ms | Allocations: 33874)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:56:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:56:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:56:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:57:45 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 639)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 10.5ms | Allocations: 4833)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 33002)
+Completed 200 OK in 22ms (Views: 13.5ms | ActiveRecord: 7.8ms | Allocations: 33932)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-1.jpg"):
+  
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:57:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-1.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/features-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:57:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-2.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-4.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-5.jpg"):
+  
+Started GET "/img/testimonials-bg.jpg" for ::1 at 2024-01-29 20:57:46 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/testimonials/testimonials-3.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/testimonials-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-01-29 20:58:40 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 402)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.7ms | Allocations: 4833)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 32762)
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 4.5ms | Allocations: 33689)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 20:58:41 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 20:58:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/" for ::1 at 2024-01-29 21:00:48 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 5185)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 32962)
+Completed 200 OK in 21ms (Views: 15.6ms | ActiveRecord: 4.8ms | Allocations: 33889)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 21:00:48 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 21:00:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/" for ::1 at 2024-01-29 21:02:11 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  [1m[36mBracket Load (1.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 ORDER BY "brackets"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:9
+  Rendered pages/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 14787)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 42450)
+Completed 200 OK in 32ms (Views: 23.0ms | ActiveRecord: 8.3ms | Allocations: 43380)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 21:02:11 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 21:02:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/brackets/3" for ::1 at 2024-01-29 21:02:13 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 2.4ms | Allocations: 1687)
+  [1m[36mMatchup Load (1.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:11
+  Rendered brackets/show.html.erb within layouts/application (Duration: 19.7ms | Allocations: 9507)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 14453)
+Completed 200 OK in 37ms (Views: 20.2ms | ActiveRecord: 7.5ms | Allocations: 18364)
+
+
+Started GET "/brackets/assets/img/favicon.png" for ::1 at 2024-01-29 21:02:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/brackets/assets/img/favicon.png"):
+  
+Started GET "/" for ::1 at 2024-01-29 21:05:41 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 6020)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6112)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.2ms | Allocations: 7020)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_leagues_path' for #<ActionView::Base:0x000000000f2468>):
+     6:             <h2 data-aos="fade-up">Create your league today!</h2>
+     7:             <p data-aos="fade-up" data-aos-delay="100">Click the button to create a new league.</p>
+     8: 
+     9:             <%= link_to 'Create a league', new_leagues_path, class: 'btn btn-primary' %>
+    10:           <% else %>
+    11:             <h2 data-aos="fade-up">Create your account and join a league today!</h2>
+    12:             <p data-aos="fade-up" data-aos-delay="100">Click the button to create your account. Then create or join a league and begin to fill out your bracket</p>
+  
+app/views/pages/index.html.erb:9
+Started GET "/" for ::1 at 2024-01-29 21:05:57 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 5189)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 339)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 32861)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 4.8ms | Allocations: 33788)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 21:05:57 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 21:05:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:05:59 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 1.3ms | Allocations: 965)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1239)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 1.1ms | Allocations: 755)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6839)
+Completed 200 OK in 18ms (Views: 8.9ms | ActiveRecord: 2.3ms | Allocations: 10475)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:06:40 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.3ms | Allocations: 1435)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1716)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1816)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.1ms | Allocations: 5927)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: league) do |form| %>
+  <% if league.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(league.errors.count, "error") %> prohibited this league from being saved:</h2>
+
+      <ul>
+        <% league.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit, class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: league) do |form| %>
+2:      <% if league.errors.any? %>
+3:        <div style="color: red">
+4:          <h2><%= pluralize(league.errors.count, "error") %> prohibited this league from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% league.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:    
+14:      <div>
+15:        <%= form.label :name, style: "display: block" %>
+16:        <%= form.text_field :name %>
+17:      </div>
+18:    
+19:      <div>
+20:        <%= form.submit, class: 'btn btn-primary' %>
+21:      </div>
+22:    <% end %>
+  
+app/views/leagues/_form.html.erb:20: syntax error, unexpected label, expecting '='
+app/views/leagues/new.html.erb:3
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:06:59 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 1024)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1309)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 7.0ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 33322)
+Completed 200 OK in 24ms (Views: 11.1ms | ActiveRecord: 10.5ms | Allocations: 37463)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:07:54 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.9ms | Allocations: 1029)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1316)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 8.1ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 33330)
+Completed 200 OK in 28ms (Views: 12.9ms | ActiveRecord: 12.4ms | Allocations: 37432)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:08:17 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1018)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1303)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 4.8ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 33296)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 7.3ms | Allocations: 37370)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:08:28 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 1007)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1296)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.0ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 33432)
+Completed 200 OK in 22ms (Views: 12.8ms | ActiveRecord: 6.3ms | Allocations: 37590)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:09:02 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1008)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1293)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.8ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 33154)
+Completed 200 OK in 25ms (Views: 11.8ms | ActiveRecord: 8.4ms | Allocations: 37226)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:10:13 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 998)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1285)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.2ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 33459)
+Completed 200 OK in 23ms (Views: 12.1ms | ActiveRecord: 8.4ms | Allocations: 37561)
+
+
+Started GET "/" for ::1 at 2024-01-29 21:10:16 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1316)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 6253)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms | Allocations: 6727)
+
+
+Started GET "/" for ::1 at 2024-01-29 21:10:44 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5114)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 32693)
+Completed 200 OK in 18ms (Views: 12.1ms | ActiveRecord: 5.4ms | Allocations: 33622)
+
+
+Started GET "/leagues" for ::1 at 2024-01-29 21:10:47 -0700
+Processing by LeaguesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (1.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.4ms | Allocations: 168)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 3080)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 1.2ms | Allocations: 755)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 8891)
+Completed 200 OK in 18ms (Views: 11.3ms | ActiveRecord: 3.6ms | Allocations: 10500)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:10:49 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 2.8ms | Allocations: 939)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1213)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 2.5ms | Allocations: 753)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 6649)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.5ms | Allocations: 6986)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:11:20 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1004)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1295)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.3ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 33293)
+Completed 200 OK in 26ms (Views: 15.7ms | ActiveRecord: 7.5ms | Allocations: 37434)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:11:29 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1004)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1294)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.4ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 33063)
+Completed 200 OK in 21ms (Views: 12.3ms | ActiveRecord: 6.5ms | Allocations: 37133)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:11:37 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1013)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1305)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.2ms | Allocations: 4698)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 33074)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 6.0ms | Allocations: 37144)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:12:05 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 995)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1240)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.6ms | Allocations: 4725)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 33125)
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 6.9ms | Allocations: 37195)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:12:13 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 980)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1226)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.4ms | Allocations: 4704)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 33130)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 6.3ms | Allocations: 37208)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:12:45 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 995)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1243)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.4ms | Allocations: 4704)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 33019)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 7.2ms | Allocations: 37090)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:13:05 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 999)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1246)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.6ms | Allocations: 4704)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 33021)
+Completed 200 OK in 21ms (Views: 11.5ms | ActiveRecord: 7.3ms | Allocations: 37091)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:13:24 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 1024)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1271)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 6.1ms | Allocations: 4704)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 33046)
+Completed 200 OK in 21ms (Views: 11.1ms | ActiveRecord: 7.7ms | Allocations: 37116)
+
+
+Started GET "/leagues/new" for ::1 at 2024-01-29 21:13:43 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.7ms | Allocations: 1026)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1278)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.4ms | Allocations: 4704)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 33296)
+Completed 200 OK in 21ms (Views: 12.1ms | ActiveRecord: 6.6ms | Allocations: 37431)
+
+
+Started GET "/leagues/edit" for ::1 at 2024-01-29 21:14:03 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1506)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find League with 'id'=edit):
+  
+app/controllers/leagues_controller.rb:63:in `set_league'
+Started GET "/leagues/edit/1" for ::1 at 2024-01-29 21:14:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/edit/1"):
+  
+Started GET "/leagues/1/edit" for ::1 at 2024-01-29 21:14:16 -0700
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/edit.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 1.6ms | Allocations: 673)
+  Rendered leagues/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 936)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 2.5ms | Allocations: 751)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6366)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.5ms | Allocations: 7108)
+
+
+Started GET "/leagues/1/assets/img/favicon.png" for ::1 at 2024-01-29 21:14:16 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/1/assets/img/favicon.png"):
+  
+Started GET "/leagues/1/edit" for ::1 at 2024-01-29 21:14:38 -0700
+Processing by LeaguesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/edit.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 0.6ms | Allocations: 1019)
+  Rendered leagues/edit.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1267)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 5.3ms | Allocations: 4705)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 33264)
+Completed 200 OK in 25ms (Views: 15.4ms | ActiveRecord: 6.4ms | Allocations: 38448)
+
+
