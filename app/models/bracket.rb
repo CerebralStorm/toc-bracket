@@ -1,7 +1,8 @@
 class Bracket < ApplicationRecord
   belongs_to :league
   belongs_to :user
-  has_many :matchups
+  has_many :matchups, dependent: :destroy
+  has_many :chefs, through: :matchups
 
   ENV['CURRENT_BRAKET_TEMPLATE'] = 'Template2024'
 
@@ -11,4 +12,7 @@ class Bracket < ApplicationRecord
     ENV['CURRENT_BRAKET_TEMPLATE'].constantize.new(user).create_bracket
   end
 
+  def matchups_by_region(region)
+    matchups.from_region(region)
+  end
 end

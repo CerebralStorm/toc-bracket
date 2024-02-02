@@ -7785,3 +7785,2170 @@ Processing by LeaguesController#edit as HTML
 Completed 200 OK in 25ms (Views: 15.4ms | ActiveRecord: 6.4ms | Allocations: 38448)
 
 
+Started GET "/" for ::1 at 2024-01-29 21:26:58 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 683)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 100)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 5659)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 6132)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-01-29 21:26:58 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-01-29 21:26:58 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+Started GET "/" for ::1 at 2024-02-02 15:23:34 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 3707)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 81)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 8472)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 8.4ms | Allocations: 8723)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-02-02 15:23:34 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-02-02 15:23:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/leagues" for ::1 at 2024-02-02 15:23:49 -0700
+Processing by LeaguesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (1.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues"[0m
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.6ms | Allocations: 154)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1013)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 1.8ms | Allocations: 751)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 6633)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 2.2ms | Allocations: 6985)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues" for ::1 at 2024-02-02 15:25:09 -0700
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 12.0ms | Allocations: 5463)
+
+
+  
+NoMethodError (undefined method `legaues' for #<User id: 1, email: "cerebralstorm@gmail.com", created_at: "2024-01-28 23:20:50.534039000 +0000", updated_at: "2024-01-28 23:20:50.534039000 +0000">):
+  
+app/controllers/leagues_controller.rb:6:in `index'
+Started GET "/leagues" for ::1 at 2024-02-02 15:25:19 -0700
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.1ms | Allocations: 165)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 6874)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 34540)
+Completed 200 OK in 33ms (Views: 12.7ms | ActiveRecord: 15.4ms | Allocations: 43437)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues" for ::1 at 2024-02-02 15:25:59 -0700
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.3ms | Allocations: 260)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5949)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 33609)
+Completed 200 OK in 25ms (Views: 11.5ms | ActiveRecord: 9.5ms | Allocations: 42038)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues.1" for ::1 at 2024-02-02 15:26:01 -0700
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.3ms | Allocations: 57)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 898)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5649)
+Completed 200 OK in 14ms (Views: 8.9ms | ActiveRecord: 0.6ms | Allocations: 6847)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues.1" for ::1 at 2024-02-02 15:26:04 -0700
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.3ms | Allocations: 57)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 879)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5643)
+Completed 200 OK in 18ms (Views: 12.7ms | ActiveRecord: 0.9ms | Allocations: 6849)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues.1" for ::1 at 2024-02-02 15:26:22 -0700
+Processing by LeaguesController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.1ms | Allocations: 190)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 5905)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 336)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 33553)
+Completed 200 OK in 23ms (Views: 10.7ms | ActiveRecord: 8.1ms | Allocations: 42148)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:26:23 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.5ms | Allocations: 49)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:21
+  Rendered leagues/show.html.erb within layouts/application (Duration: 28.9ms | Allocations: 10673)
+  Rendered application/_header.html.erb (Duration: 0.4ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 15424)
+Completed 200 OK in 42ms (Views: 30.9ms | ActiveRecord: 5.9ms | Allocations: 16798)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:26:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:27:03 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (1.7ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:21
+  Rendered leagues/show.html.erb within layouts/application (Duration: 17.0ms | Allocations: 16974)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 44708)
+Completed 200 OK in 43ms (Views: 22.5ms | ActiveRecord: 17.7ms | Allocations: 49859)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:27:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:27:53 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:21
+  Rendered leagues/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 16996)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 44499)
+Completed 200 OK in 30ms (Views: 16.2ms | ActiveRecord: 10.9ms | Allocations: 49699)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:27:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:28:03 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:21
+  Rendered leagues/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 16991)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 44621)
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 13.5ms | Allocations: 49821)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:28:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:28:26 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 19.5ms | Allocations: 17029)
+  Rendered application/_header.html.erb (Duration: 0.4ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 44732)
+Completed 200 OK in 41ms (Views: 24.6ms | ActiveRecord: 14.0ms | Allocations: 49871)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:28:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:28:50 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 17.9ms | Allocations: 16851)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 44257)
+Completed 200 OK in 35ms (Views: 17.7ms | ActiveRecord: 14.4ms | Allocations: 49446)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:28:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:28:56 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 21.0ms | Allocations: 16884)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 44513)
+Completed 200 OK in 36ms (Views: 16.2ms | ActiveRecord: 17.0ms | Allocations: 49751)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:28:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:30:08 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:18
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:25
+  Rendered leagues/show.html.erb within layouts/application (Duration: 20.9ms | Allocations: 16863)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 44493)
+Completed 200 OK in 38ms (Views: 15.9ms | ActiveRecord: 19.5ms | Allocations: 49655)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:30:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:30:52 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:18
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:25
+  Rendered leagues/show.html.erb within layouts/application (Duration: 17.9ms | Allocations: 16873)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 44514)
+Completed 200 OK in 33ms (Views: 16.1ms | ActiveRecord: 14.4ms | Allocations: 49679)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:30:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/" for ::1 at 2024-02-02 15:30:53 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1316)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 6253)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 6727)
+
+
+Started GET "/" for ::1 at 2024-02-02 15:31:37 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5133)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 32801)
+Completed 200 OK in 24ms (Views: 18.3ms | ActiveRecord: 5.4ms | Allocations: 33728)
+
+
+Started GET "/leagues" for ::1 at 2024-02-02 15:31:39 -0700
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.4ms | Allocations: 188)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 5849)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 10796)
+Completed 200 OK in 27ms (Views: 13.7ms | ActiveRecord: 5.6ms | Allocations: 15024)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:31:40 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.3ms | Allocations: 49)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:19
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:26
+  Rendered leagues/show.html.erb within layouts/application (Duration: 26.8ms | Allocations: 10469)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 15207)
+Completed 200 OK in 39ms (Views: 28.0ms | ActiveRecord: 5.5ms | Allocations: 16577)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:31:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:31:53 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 16821)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 44453)
+Completed 200 OK in 34ms (Views: 17.3ms | ActiveRecord: 14.0ms | Allocations: 49699)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:31:53 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:33:15 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 14.8ms | Allocations: 16846)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 44477)
+Completed 200 OK in 32ms (Views: 15.7ms | ActiveRecord: 13.0ms | Allocations: 49642)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:33:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:33:23 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:17
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:24
+  Rendered leagues/show.html.erb within layouts/application (Duration: 15.1ms | Allocations: 16837)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 44229)
+Completed 200 OK in 31ms (Views: 15.5ms | ActiveRecord: 12.7ms | Allocations: 49406)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:33:23 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:33:49 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  Rendered leagues/show.html.erb within layouts/application (Duration: 15.4ms | Allocations: 16834)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 44465)
+Completed 200 OK in 33ms (Views: 18.5ms | ActiveRecord: 12.3ms | Allocations: 49673)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:33:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:34:06 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:25
+  Rendered leagues/show.html.erb within layouts/application (Duration: 17.4ms | Allocations: 16841)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 44472)
+Completed 200 OK in 34ms (Views: 15.8ms | ActiveRecord: 15.3ms | Allocations: 49674)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:34:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:36:43 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  Rendered leagues/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 13867)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 13959)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 11.6ms | Allocations: 19077)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `league' for #<ActionView::Base:0x00000000208a00>):
+    20: 
+    21:   </br>
+    22: 
+    23:   <% if current_user.league_bracket(league).present? %>
+    24:     <%= link_to 'View my bracket', bracket_path(league_id: league.id, user_id: current_user.id) %>
+    25:   <% else %>
+    26:     <%= form_with model: Bracket.new, method: :post do |form| %>
+  
+app/views/leagues/show.html.erb:23
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:36:55 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.2ms | Allocations: 228)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.5ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 15.8ms | Allocations: 19369)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 47000)
+Completed 200 OK in 32ms (Views: 16.7ms | ActiveRecord: 12.2ms | Allocations: 52249)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:36:56 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/brackets/1?league_id=1&user_id=1" for ::1 at 2024-02-02 15:36:58 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"league_id"=>"1", "user_id"=>"1", "id"=>"1"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 1525)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket with 'id'=1):
+  
+app/controllers/brackets_controller.rb:64:in `set_bracket'
+Started GET "/brackets/1?league_id=1&user_id=1" for ::1 at 2024-02-02 15:37:37 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"league_id"=>"1", "user_id"=>"1", "id"=>"1"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+Completed 404 Not Found in 6ms (ActiveRecord: 4.3ms | Allocations: 3291)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Bracket with 'id'=1):
+  
+app/controllers/brackets_controller.rb:64:in `set_bracket'
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:37:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:37:41 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.4ms | Allocations: 225)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  [1m[36mCACHE Bracket Load (0.0ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 25.0ms | Allocations: 18088)
+  Rendered application/_header.html.erb (Duration: 0.7ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.2ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 45719)
+Completed 200 OK in 60ms (Views: 42.0ms | ActiveRecord: 9.9ms | Allocations: 50873)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:37:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:37:42 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 4.2ms | Allocations: 1628)
+  [1m[36mMatchup Load (0.6ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:11
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.1ms | Allocations: 8273)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 13205)
+Completed 200 OK in 38ms (Views: 21.6ms | ActiveRecord: 4.6ms | Allocations: 16246)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:41:43 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.0ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.9ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.7ms | Allocations: 21199)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 348)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 48853)
+Completed 200 OK in 39ms (Views: 19.7ms | ActiveRecord: 12.3ms | Allocations: 60511)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:42:13 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.0ms | Allocations: 2153)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:17
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.5ms | Allocations: 20496)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 348)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 47909)
+Completed 200 OK in 40ms (Views: 17.4ms | ActiveRecord: 17.1ms | Allocations: 59568)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:43:37 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.9ms | Allocations: 2153)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.5ms | Allocations: 20248)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 47715)
+Completed 200 OK in 43ms (Views: 16.7ms | ActiveRecord: 20.2ms | Allocations: 59339)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:44:14 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.1ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 15.7ms | Allocations: 20320)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 48152)
+Completed 200 OK in 44ms (Views: 18.8ms | ActiveRecord: 15.2ms | Allocations: 59777)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 15:44:44 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.2ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 2], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 16.3ms | Allocations: 20246)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 47810)
+Completed 200 OK in 38ms (Views: 18.6ms | ActiveRecord: 12.8ms | Allocations: 59488)
+
+
+  [1m[36mMatchup Load (0.3ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" ORDER BY "matchups"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMatchup Load (0.6ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" ORDER BY "matchups"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mChef Load (0.8ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 /* loading for pp */ LIMIT $2[0m  [["matchup_id", 1], ["LIMIT", 11]]
+  [1m[36mMatchup Load (1.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" ORDER BY "matchups"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMatchupChef Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1[0m  [["matchup_id", 1]]
+  [1m[36mBracket Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "brackets"[0m
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" ORDER BY "brackets"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  [1m[36mMatchupChef Load (0.2ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1[0m  [["matchup_id", 1]]
+  [1m[36mMatchupChef Destroy (0.8ms)[0m  [1m[31mDELETE FROM "matchup_chefs" WHERE "matchup_chefs"."id" = $1[0m  [["id", 1]]
+  [1m[36mMatchup Destroy (0.2ms)[0m  [1m[31mDELETE FROM "matchups" WHERE "matchups"."id" = $1[0m  [["id", 1]]
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1[0m  [["matchup_id", 2]]
+  [1m[36mMatchupChef Destroy (0.2ms)[0m  [1m[31mDELETE FROM "matchup_chefs" WHERE "matchup_chefs"."id" = $1[0m  [["id", 2]]
+  [1m[36mMatchup Destroy (0.1ms)[0m  [1m[31mDELETE FROM "matchups" WHERE "matchups"."id" = $1[0m  [["id", 2]]
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1[0m  [["matchup_id", 3]]
+  [1m[36mMatchupChef Destroy (0.1ms)[0m  [1m[31mDELETE FROM "matchup_chefs" WHERE "matchup_chefs"."id" = $1[0m  [["id", 3]]
+  [1m[36mMatchup Destroy (0.1ms)[0m  [1m[31mDELETE FROM "matchups" WHERE "matchups"."id" = $1[0m  [["id", 3]]
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1[0m  [["matchup_id", 4]]
+  [1m[36mMatchupChef Destroy (0.1ms)[0m  [1m[31mDELETE FROM "matchup_chefs" WHERE "matchup_chefs"."id" = $1[0m  [["id", 4]]
+  [1m[36mMatchup Destroy (0.1ms)[0m  [1m[31mDELETE FROM "matchups" WHERE "matchups"."id" = $1[0m  [["id", 4]]
+  [1m[36mBracket Destroy (0.2ms)[0m  [1m[31mDELETE FROM "brackets" WHERE "brackets"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMatchup Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "matchups"[0m
+  [1m[36mMatchupChef Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "matchup_chefs"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mBracket Load (0.7ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 ORDER BY "brackets"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2024-02-02 15:51:54 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 7514)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 335)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 34938)
+Completed 200 OK in 25ms (Views: 18.2ms | ActiveRecord: 6.1ms | Allocations: 35866)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-02-02 15:51:54 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-02-02 15:51:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/leagues" for ::1 at 2024-02-02 15:51:55 -0700
+Processing by LeaguesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/index.html.erb within layouts/application
+  [1m[36mLeague Load (0.8ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" INNER JOIN "league_users" ON "leagues"."id" = "league_users"."league_id" WHERE "league_users"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/leagues/index.html.erb:15
+  Rendered leagues/_league.html.erb (Duration: 0.7ms | Allocations: 188)
+  Rendered leagues/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 5956)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 10904)
+Completed 200 OK in 39ms (Views: 17.0ms | ActiveRecord: 10.0ms | Allocations: 15159)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 15:51:57 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.4ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.3ms | Allocations: 49)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.7ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 29.2ms | Allocations: 12321)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 17072)
+Completed 200 OK in 41ms (Views: 31.5ms | ActiveRecord: 4.2ms | Allocations: 18444)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 15:51:57 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started POST "/brackets" for ::1 at 2024-02-02 15:51:58 -0700
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"league_id"=>"1", "user_id"=>"1"}, "commit"=>"Fill our your bracket"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Create (2.0ms)[0m  [1m[32mINSERT INTO "brackets" ("user_id", "league_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["league_id", 1], ["created_at", "2024-02-02 22:51:58.452815"], ["updated_at", "2024-02-02 22:51:58.452815"]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 ORDER BY "brackets"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:20:in `create_bracket'
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mMatchup Create (0.6ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 4], ["created_at", "2024-02-02 22:51:58.464194"], ["updated_at", "2024-02-02 22:51:58.464194"]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mChef Load (0.5ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Eric Adjepong"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.3ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 5], ["chef_id", 24], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.3ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["matchup_id", 5], ["chef_id", 24], ["created_at", "2024-02-02 22:51:58.480033"], ["updated_at", "2024-02-02 22:51:58.480033"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Karen Akunowicz"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 5], ["chef_id", 30], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["matchup_id", 5], ["chef_id", 30], ["created_at", "2024-02-02 22:51:58.483592"], ["updated_at", "2024-02-02 22:51:58.483592"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mMatchup Create (0.1ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 4], ["created_at", "2024-02-02 22:51:58.485749"], ["updated_at", "2024-02-02 22:51:58.485749"]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Kelsey Barnard Clark"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 6], ["chef_id", 23], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.1ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["matchup_id", 6], ["chef_id", 23], ["created_at", "2024-02-02 22:51:58.488778"], ["updated_at", "2024-02-02 22:51:58.488778"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Maneet Chauhan"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 6], ["chef_id", 20], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.1ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["matchup_id", 6], ["chef_id", 20], ["created_at", "2024-02-02 22:51:58.491547"], ["updated_at", "2024-02-02 22:51:58.491547"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/brackets/4
+Completed 302 Found in 53ms (ActiveRecord: 9.0ms | Allocations: 39576)
+
+
+Started GET "/brackets/4" for ::1 at 2024-02-02 15:51:58 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.2ms | Allocations: 712)
+  [1m[36mMatchup Load (0.4ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 4]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 6948)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 105)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 11904)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 1.6ms | Allocations: 14807)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3564327540850153245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+Migrating to AddSeedToMatchupChef (20240202225320)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "matchup_chefs" ADD "seed" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240202225320') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRegionToChef (20240202225401)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "chefs" ADD "region" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240202225401') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(3564327540850153245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[35m (33.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "toc_bracket_development"[0m
+  [1m[35m (23.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "toc_bracket_test"[0m
+  [1m[35m (89.1ms)[0m  [1m[35mCREATE DATABASE "toc_bracket_development" ENCODING = 'unicode'[0m
+  [1m[35m (47.6ms)[0m  [1m[35mCREATE DATABASE "toc_bracket_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3564327540850153245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-02-02 23:07:24.353103', '2024-02-02 23:07:24.353105') RETURNING "key"[0m
+Migrating to DeviseCreateUsers (20240128224949)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp(6), "remember_created_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240128224949') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLeagues (20240128225053)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "leagues" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240128225053') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateLeagueUsers (20240128231823)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "league_users" ("id" bigserial primary key, "league_id" integer, "user_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240128231823') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateChefs (20240128232139)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "chefs" ("id" bigserial primary key, "name" character varying, "region" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240128232139') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBrackets (20240129013827)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "brackets" ("id" bigserial primary key, "user_id" integer, "league_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240129013827') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMatchups (20240129033627)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "matchups" ("id" bigserial primary key, "bracket_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240129033627') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMatchupChefs (20240129033801)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "matchup_chefs" ("id" bigserial primary key, "matchup_id" integer, "chef_id" integer, "seed" integer, "integer" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20240129033801') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(3564327540850153245)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mChef Load (0.9ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Kelsey Barnard Clark"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (7.9ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kelsey Barnard Clark"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.371495"], ["updated_at", "2024-02-02 23:09:35.371495"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Jose Garces"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jose Garces"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.388984"], ["updated_at", "2024-02-02 23:09:35.388984"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Stephanie Izard"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stephanie Izard"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.391332"], ["updated_at", "2024-02-02 23:09:35.391332"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Marc Murphy"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Marc Murphy"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.393664"], ["updated_at", "2024-02-02 23:09:35.393664"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Britt Rescigno"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Britt Rescigno"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.395619"], ["updated_at", "2024-02-02 23:09:35.395619"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Jonathon Sawyer"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jonathon Sawyer"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.397691"], ["updated_at", "2024-02-02 23:09:35.397691"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Dale Talde"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dale Talde"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.399861"], ["updated_at", "2024-02-02 23:09:35.399861"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Eric Adjepong"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Eric Adjepong"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.401667"], ["updated_at", "2024-02-02 23:09:35.401667"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Amanda Freitag"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Amanda Freitag"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.403447"], ["updated_at", "2024-02-02 23:09:35.403447"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Tiffani Faison"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tiffani Faison"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.405235"], ["updated_at", "2024-02-02 23:09:35.405235"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Karen Akunowicz"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Karen Akunowicz"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.406979"], ["updated_at", "2024-02-02 23:09:35.406979"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Tobias Dorzon"], ["region", "East"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tobias Dorzon"], ["region", "East"], ["created_at", "2024-02-02 23:09:35.408942"], ["updated_at", "2024-02-02 23:09:35.408942"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Carlos Anthony"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Carlos Anthony"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.410840"], ["updated_at", "2024-02-02 23:09:35.410840"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Shirley Chung"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shirley Chung"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.413435"], ["updated_at", "2024-02-02 23:09:35.413435"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.5ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Mei Lin"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Mei Lin"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.415956"], ["updated_at", "2024-02-02 23:09:35.415956"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Antonia Lofaso"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Antonia Lofaso"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.417765"], ["updated_at", "2024-02-02 23:09:35.417765"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Crista Luedtke"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Crista Luedtke"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.419353"], ["updated_at", "2024-02-02 23:09:35.419353"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Brian Malarkey"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brian Malarkey"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.420929"], ["updated_at", "2024-02-02 23:09:35.420929"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Shota Nakajima"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shota Nakajima"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.422542"], ["updated_at", "2024-02-02 23:09:35.422542"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Joe Sasto"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Joe Sasto"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.424271"], ["updated_at", "2024-02-02 23:09:35.424271"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Adam Sobel"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Adam Sobel"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.426091"], ["updated_at", "2024-02-02 23:09:35.426091"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Casey Thompson"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Casey Thompson"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.428480"], ["updated_at", "2024-02-02 23:09:35.428480"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Jet Tila"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Jet Tila"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.430514"], ["updated_at", "2024-02-02 23:09:35.430514"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Michael Voltaggio"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Michael Voltaggio"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.432435"], ["updated_at", "2024-02-02 23:09:35.432435"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Brooke Williamson"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.6ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Brooke Williamson"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.434324"], ["updated_at", "2024-02-02 23:09:35.434324"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 AND "chefs"."region" = $2 ORDER BY "chefs"."id" ASC LIMIT $3[0m  [["name", "Lee Ann Wong"], ["region", "West"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mChef Create (0.5ms)[0m  [1m[32mINSERT INTO "chefs" ("name", "region", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Lee Ann Wong"], ["region", "West"], ["created_at", "2024-02-02 23:09:35.436018"], ["updated_at", "2024-02-02 23:09:35.436018"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2024-02-02 16:09:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4685)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 349)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 32362)
+Completed 200 OK in 26ms (Views: 17.9ms | ActiveRecord: 7.4ms | Allocations: 33292)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-02-02 16:09:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-02-02 16:09:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:09:50 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 527)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2697)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 7960)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 12076)
+
+
+Started GET "/users/assets/img/favicon.png" for ::1 at 2024-02-02 16:09:50 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/assets/img/favicon.png"):
+  
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:10:18 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2117)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 394)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 30012)
+Completed 200 OK in 28ms (Views: 17.1ms | ActiveRecord: 8.9ms | Allocations: 34999)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:10:57 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 70)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 893)
+  Rendered application/_header.html.erb (Duration: 0.8ms | Allocations: 115)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 3183.7ms | Allocations: 40407)
+Completed 200 OK in 3187ms (Views: 3184.5ms | ActiveRecord: 0.0ms | Allocations: 40960)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:11:52 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 70)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 893)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 2131.3ms | Allocations: 39695)
+Completed 200 OK in 2134ms (Views: 2131.8ms | ActiveRecord: 0.0ms | Allocations: 40263)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:12:01 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 70)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 893)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5751)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 6315)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:12:08 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 70)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 893)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 5697)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6268)
+
+
+Started GET "/" for ::1 at 2024-02-02 16:12:19 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 732)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5760)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6425)
+
+
+Started GET "/img/hero-bg.png" for ::1 at 2024-02-02 16:12:19 -0700
+Started GET "/img/cta-bg.jpg" for ::1 at 2024-02-02 16:12:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/img/cta-bg.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/img/hero-bg.png"):
+  
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:12:34 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 13)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 71)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 895)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 115)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5705)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6263)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:13:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2140)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 390)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 30017)
+Completed 200 OK in 19ms (Views: 13.1ms | ActiveRecord: 3.6ms | Allocations: 35031)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:13:36 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2163)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 390)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 29813)
+Completed 200 OK in 16ms (Views: 10.4ms | ActiveRecord: 4.1ms | Allocations: 34761)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:13:48 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2165)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 390)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 30152)
+Completed 200 OK in 24ms (Views: 12.8ms | ActiveRecord: 4.3ms | Allocations: 35131)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:14:24 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 507)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2174)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 390)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 29883)
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 4.6ms | Allocations: 34838)
+
+
+Started GET "/users/sign_up" for ::1 at 2024-02-02 16:14:53 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 508)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2167)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 390)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 29818)
+Completed 200 OK in 17ms (Views: 10.8ms | ActiveRecord: 4.4ms | Allocations: 34781)
+
+
+Started POST "/users" for ::1 at 2024-02-02 16:15:13 -0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"cerebralstorm@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cerebralstorm@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "cerebralstorm@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2024-02-02 23:15:13.344130"], ["updated_at", "2024-02-02 23:15:13.344130"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 303 See Other in 272ms (ActiveRecord: 5.8ms | Allocations: 10720)
+
+
+Started GET "/" for ::1 at 2024-02-02 16:15:13 -0700
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/pages/index.html.erb:5
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1544)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 95)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 6557)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 7221)
+
+
+Started GET "/leagues/new" for ::1 at 2024-02-02 16:15:17 -0700
+Processing by LeaguesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/new.html.erb within layouts/application
+  Rendered leagues/_form.html.erb (Duration: 1.6ms | Allocations: 994)
+  Rendered leagues/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1236)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/application/_header.html.erb:19
+  Rendered application/_header.html.erb (Duration: 2.1ms | Allocations: 755)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 6826)
+Completed 200 OK in 21ms (Views: 10.4ms | ActiveRecord: 3.5ms | Allocations: 10409)
+
+
+Started POST "/leagues" for ::1 at 2024-02-02 16:15:21 -0700
+Processing by LeaguesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "league"=>{"name"=>"Gluttony Warriors"}, "commit"=>"Create League"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leagues_controller.rb:27:in `block in create'
+  [1m[36mLeague Create (3.3ms)[0m  [1m[32mINSERT INTO "leagues" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Gluttony Warriors"], ["created_at", "2024-02-02 23:15:21.241612"], ["updated_at", "2024-02-02 23:15:21.241612"]]
+  ↳ app/controllers/leagues_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leagues_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/leagues/1
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms | Allocations: 2238)
+
+
+Started GET "/leagues/1" for ::1 at 2024-02-02 16:15:21 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.4ms | Allocations: 191)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.8ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 24.0ms | Allocations: 15109)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 19838)
+Completed 200 OK in 33ms (Views: 21.0ms | ActiveRecord: 8.7ms | Allocations: 21274)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 16:15:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started POST "/league_users" for ::1 at 2024-02-02 16:15:35 -0700
+Processing by LeagueUsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "league_user"=>{"league_id"=>"1", "email"=>"cerebralstorm@gmail.com"}, "commit"=>"Invite User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/league_user.rb:11:in `populate_email_user'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "cerebralstorm@gmail.com"], ["LIMIT", 1]]
+  ↳ app/models/league_user.rb:11:in `populate_email_user'
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/league_users_controller.rb:8:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/league_users_controller.rb:8:in `block in create'
+  [1m[36mLeagueUser Create (0.5ms)[0m  [1m[32mINSERT INTO "league_users" ("league_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["league_id", 1], ["user_id", 1], ["created_at", "2024-02-02 23:15:35.563334"], ["updated_at", "2024-02-02 23:15:35.563334"]]
+  ↳ app/controllers/league_users_controller.rb:8:in `block in create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/league_users_controller.rb:8:in `block in create'
+Redirected to http://localhost:3000/leagues/1
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms | Allocations: 6335)
+
+
+Started GET "/leagues/1" for ::1 at 2024-02-02 16:15:35 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.3ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.1ms | Allocations: 50)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3010)
+  Rendered application/_header.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered application/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 7744)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.9ms | Allocations: 8414)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 16:15:35 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started POST "/brackets" for ::1 at 2024-02-02 16:15:42 -0700
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"league_id"=>"1", "user_id"=>"1"}, "commit"=>"Fill our your bracket"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mLeague Load (0.2ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Create (1.1ms)[0m  [1m[32mINSERT INTO "brackets" ("user_id", "league_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["league_id", 1], ["created_at", "2024-02-02 23:15:42.741935"], ["updated_at", "2024-02-02 23:15:42.741935"]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 ORDER BY "brackets"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:20:in `create_bracket'
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mMatchup Create (1.7ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 1], ["created_at", "2024-02-02 23:15:42.756733"], ["updated_at", "2024-02-02 23:15:42.756733"]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mChef Load (0.5ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Eric Adjepong"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.8ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 1], ["chef_id", 8], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (1.0ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 1], ["chef_id", 8], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:15:42.785326"], ["updated_at", "2024-02-02 23:15:42.785326"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Karen Akunowicz"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 1], ["chef_id", 11], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.3ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 1], ["chef_id", 11], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:15:42.789632"], ["updated_at", "2024-02-02 23:15:42.789632"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mMatchup Create (0.2ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 1], ["created_at", "2024-02-02 23:15:42.791603"], ["updated_at", "2024-02-02 23:15:42.791603"]]
+  ↳ app/bracket_templates/template2024.rb:23:in `block in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Kelsey Barnard Clark"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 2], ["chef_id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 2], ["chef_id", 1], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:15:42.794344"], ["updated_at", "2024-02-02 23:15:42.794344"]]
+  ↳ app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Maneet Chauhan"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:25:in `block (2 levels) in create_bracket'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 20.8ms | Allocations: 38453)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/bracket_templates/template2024.rb:26:in `block (2 levels) in create_bracket'
+app/bracket_templates/template2024.rb:24:in `each'
+app/bracket_templates/template2024.rb:24:in `block in create_bracket'
+app/bracket_templates/template2024.rb:22:in `each'
+app/bracket_templates/template2024.rb:22:in `create_bracket'
+app/models/bracket.rb:11:in `setup_matches'
+app/controllers/brackets_controller.rb:28:in `block in create'
+app/controllers/brackets_controller.rb:27:in `create'
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 16:15:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" ORDER BY "brackets"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/brackets" for ::1 at 2024-02-02 16:20:14 -0700
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"league_id"=>"1", "user_id"=>"1"}, "commit"=>"Fill our your bracket"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Create (0.2ms)[0m  [1m[32mINSERT INTO "brackets" ("user_id", "league_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["league_id", 1], ["created_at", "2024-02-02 23:20:14.453564"], ["updated_at", "2024-02-02 23:20:14.453564"]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 10.3ms | Allocations: 19765)
+
+
+  
+NameError (undefined local variable or method `b' for main:Object):
+  
+app/bracket_templates/template2024.rb:42:in `<main>'
+app/models/bracket.rb:11:in `setup_matches'
+app/controllers/brackets_controller.rb:28:in `block in create'
+app/controllers/brackets_controller.rb:27:in `create'
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 16:20:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started GET "/leagues/1" for ::1 at 2024-02-02 16:20:21 -0700
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLeague Load (0.5ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/leagues_controller.rb:63:in `set_league'
+  Rendering layout layouts/application.html.erb
+  Rendering leagues/show.html.erb within layouts/application
+  Rendered leagues/_league.html.erb (Duration: 0.6ms | Allocations: 226)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "league_users" ON "users"."id" = "league_users"."user_id" WHERE "league_users"."league_id" = $1[0m  [["league_id", 1]]
+  ↳ app/views/leagues/show.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/leagues/show.html.erb:23
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 AND "brackets"."league_id" = $2 ORDER BY "brackets"."id" ASC LIMIT $3[0m  [["user_id", 1], ["league_id", 1], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12:in `league_bracket'
+  Rendered leagues/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 11028)
+  Rendered application/_header.html.erb (Duration: 0.5ms | Allocations: 337)
+  Rendered application/_footer.html.erb (Duration: 0.4ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 37.7ms | Allocations: 38645)
+Completed 200 OK in 45ms (Views: 36.2ms | ActiveRecord: 4.6ms | Allocations: 40635)
+
+
+Started GET "/leagues/assets/img/about.jpg" for ::1 at 2024-02-02 16:20:21 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/leagues/assets/img/about.jpg"):
+  
+Started POST "/brackets" for ::1 at 2024-02-02 16:20:27 -0700
+Processing by BracketsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "bracket"=>{"league_id"=>"1", "user_id"=>"1"}, "commit"=>"Fill our your bracket"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mLeague Load (0.1ms)[0m  [1m[34mSELECT "leagues".* FROM "leagues" WHERE "leagues"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Create (0.8ms)[0m  [1m[32mINSERT INTO "brackets" ("user_id", "league_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 1], ["league_id", 1], ["created_at", "2024-02-02 23:20:28.025462"], ["updated_at", "2024-02-02 23:20:28.025462"]]
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."user_id" = $1 ORDER BY "brackets"."id" DESC LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:30:in `create_bracket'
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mMatchup Create (0.2ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 3], ["created_at", "2024-02-02 23:20:28.032062"], ["updated_at", "2024-02-02 23:20:28.032062"]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Kelsey Barnard Clark"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 3], ["chef_id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.7ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 3], ["chef_id", 1], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.042062"], ["updated_at", "2024-02-02 23:20:28.042062"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Jose Garces"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 3], ["chef_id", 2], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 3], ["chef_id", 2], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.044756"], ["updated_at", "2024-02-02 23:20:28.044756"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mMatchup Create (0.1ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 3], ["created_at", "2024-02-02 23:20:28.046033"], ["updated_at", "2024-02-02 23:20:28.046033"]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Stephanie Izard"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 4], ["chef_id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.1ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 4], ["chef_id", 3], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.048032"], ["updated_at", "2024-02-02 23:20:28.048032"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Marc Murphy"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 4], ["chef_id", 4], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 4], ["chef_id", 4], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.049721"], ["updated_at", "2024-02-02 23:20:28.049721"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mBracket Load (0.6ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mMatchup Create (0.1ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 3], ["created_at", "2024-02-02 23:20:28.051162"], ["updated_at", "2024-02-02 23:20:28.051162"]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Carlos Anthony"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 5], ["chef_id", 13], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 5], ["chef_id", 13], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.053303"], ["updated_at", "2024-02-02 23:20:28.053303"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Shirley Chung"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 5], ["chef_id", 14], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.1ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 5], ["chef_id", 14], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.055004"], ["updated_at", "2024-02-02 23:20:28.055004"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mMatchup Create (0.1ms)[0m  [1m[32mINSERT INTO "matchups" ("bracket_id", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["bracket_id", 3], ["created_at", "2024-02-02 23:20:28.056014"], ["updated_at", "2024-02-02 23:20:28.056014"]]
+  ↳ app/bracket_templates/template2024.rb:33:in `block in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Mei Lin"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 6], ["chef_id", 15], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.1ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 6], ["chef_id", 15], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.057699"], ["updated_at", "2024-02-02 23:20:28.057699"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."name" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["name", "Antonia Lofaso"], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:35:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Load (0.1ms)[0m  [1m[34mSELECT "matchup_chefs".* FROM "matchup_chefs" WHERE "matchup_chefs"."matchup_id" = $1 AND "matchup_chefs"."chef_id" = $2 ORDER BY "matchup_chefs"."id" ASC LIMIT $3[0m  [["matchup_id", 6], ["chef_id", 16], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mMatchupChef Create (0.2ms)[0m  [1m[32mINSERT INTO "matchup_chefs" ("matchup_id", "chef_id", "seed", "integer", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["matchup_id", 6], ["chef_id", 16], ["seed", nil], ["integer", nil], ["created_at", "2024-02-02 23:20:28.059472"], ["updated_at", "2024-02-02 23:20:28.059472"]]
+  ↳ app/bracket_templates/template2024.rb:36:in `block (2 levels) in create_bracket'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/brackets_controller.rb:28:in `block in create'
+Redirected to http://localhost:3000/brackets/3
+Completed 302 Found in 50ms (ActiveRecord: 20.0ms | Allocations: 65041)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:20:28 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.7ms | Allocations: 723)
+  [1m[36mMatchup Load (0.1ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.3ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 10307)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 377)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 37988)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 2.1ms | Allocations: 41352)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:21:58 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 1.0ms | Allocations: 2153)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 7569)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7661)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 12.1ms | Allocations: 19270)
+
+
+  
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "chefs"
+LINE 1: ..."matchups" WHERE "matchups"."bracket_id" = $1 AND "chefs"."r...
+                                                             ^
+):
+     6: 
+     7:   <h2>West Matchups</h2>
+     8:   <div class="accordion" id="accordionExample">
+     9:     <% @bracket.matchups.merge(Chef.west).each_with_index do |matchup, index| %>
+    10:       <div class="accordion-item">
+    11:         <h2 class="accordion-header" id="heading<%= matchup.id %>">
+    12:           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:22:43 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.8ms | Allocations: 2153)
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" WHERE "chefs"."region" = $1[0m  [["region", "West"]]
+  ↳ app/views/brackets/show.html.erb:9
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 9614)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 9706)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 14.0ms | Allocations: 21311)
+
+
+  
+ActionView::Template::Error (unknown class: Chef):
+     6: 
+     7:   <h2>West Matchups</h2>
+     8:   <div class="accordion" id="accordionExample">
+     9:     <% @bracket.matchups.joins(Chef.west).each_with_index do |matchup, index| %>
+    10:       <div class="accordion-item">
+    11:         <h2 class="accordion-header" id="heading<%= matchup.id %>">
+    12:           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  
+app/views/brackets/show.html.erb:9:in `each_with_index'
+app/views/brackets/show.html.erb:9
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:25:40 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 980)
+
+
+  
+SyntaxError (/Users/codytanner/Code/toc-bracket/app/models/bracket.rb:16: syntax error, unexpected ')', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+    matchups.joins(:)
+                    ^
+):
+  
+app/models/bracket.rb:16: syntax error, unexpected ')', expecting literal content or terminator or tSTRING_DBEG or tSTRING_DVAR
+app/controllers/brackets_controller.rb:64:in `set_bracket'
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:26:01 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.8ms | Allocations: 2154)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 5751)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5843)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 6.6ms | Allocations: 17987)
+
+
+  
+ActionView::Template::Error (undefined method `by_region' for Chef:Class):
+     6: 
+     7:   <h2>West Matchups</h2>
+     8:   <div class="accordion" id="accordionExample">
+     9:     <% @bracket.matchups_by_region('West').each_with_index do |matchup, index| %>
+    10:       <div class="accordion-item">
+    11:         <h2 class="accordion-header" id="heading<%= matchup.id %>">
+    12:           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  
+app/models/bracket.rb:16:in `matchups_by_region'
+app/views/brackets/show.html.erb:9
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:26:09 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.8ms | Allocations: 2154)
+  Rendered brackets/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 7400)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7492)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 11.8ms | Allocations: 19634)
+
+
+  
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "chefs"
+LINE 1: ..."matchups" WHERE "matchups"."bracket_id" = $1 AND "chefs"."r...
+                                                             ^
+):
+     6: 
+     7:   <h2>West Matchups</h2>
+     8:   <div class="accordion" id="accordionExample">
+     9:     <% @bracket.matchups_by_region('West').each_with_index do |matchup, index| %>
+    10:       <div class="accordion-item">
+    11:         <h2 class="accordion-header" id="heading<%= matchup.id %>">
+    12:           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:26:19 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.1ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.9ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.2ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" WHERE "matchups"."bracket_id" = $1 /* loading for pp */ LIMIT $2[0m  [["bracket_id", 3], ["LIMIT", 11]]
+  ↳ app/models/bracket.rb:16:in `matchups_by_region'
+  [1m[36mMatchup Load (0.5ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 /* loading for pp */ LIMIT $2[0m  [["bracket_id", 3], ["LIMIT", 11]]
+  ↳ app/models/bracket.rb:16:in `matchups_by_region'
+  [1m[36mMatchup Load (0.4ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2 /* loading for pp */ LIMIT $3[0m  [["bracket_id", 3], ["region", "West"], ["LIMIT", 11]]
+  ↳ app/models/bracket.rb:16:in `matchups_by_region'
+  [1m[36mMatchup Load (0.7ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ (pry):6:in `uniq'
+  Rendered brackets/show.html.erb within layouts/application (Duration: 75961.7ms | Allocations: 67337)
+  Rendered layout layouts/application.html.erb (Duration: 75962.0ms | Allocations: 67429)
+Completed 500 Internal Server Error in 75976ms (ActiveRecord: 22.1ms | Allocations: 79482)
+
+
+  
+ActionView::Template::Error (PG::UndefinedTable: ERROR:  missing FROM-clause entry for table "chefs"
+LINE 1: ..."matchups" WHERE "matchups"."bracket_id" = $1 AND "chefs"."r...
+                                                             ^
+):
+     6: 
+     7:   <h2>West Matchups</h2>
+     8:   <div class="accordion" id="accordionExample">
+     9:     <% @bracket.matchups_by_region('West').each_with_index do |matchup, index| %>
+    10:       <div class="accordion-item">
+    11:         <h2 class="accordion-header" id="heading<%= matchup.id %>">
+    12:           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+  
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:27:51 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 3.1ms | Allocations: 3245)
+  [1m[36mMatchup Load (1.8ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ app/models/bracket.rb:16:in `uniq'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.4ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  Rendered brackets/show.html.erb within layouts/application (Duration: 25.5ms | Allocations: 24223)
+  Rendered application/_header.html.erb (Duration: 0.4ms | Allocations: 472)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 122.8ms | Allocations: 96993)
+Completed 200 OK in 175ms (Views: 115.1ms | ActiveRecord: 29.9ms | Allocations: 129691)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:28:16 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.4ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.8ms | Allocations: 2155)
+  [1m[36mMatchup Load (0.4ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ app/models/bracket.rb:16:in `uniq'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Matchup Load (0.0ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ app/models/bracket.rb:16:in `uniq'
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.3ms | Allocations: 21157)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 386)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 48852)
+Completed 200 OK in 43ms (Views: 21.3ms | ActiveRecord: 16.4ms | Allocations: 60984)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:28:26 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.9ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.3ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ app/models/bracket.rb:16:in `uniq'
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.2ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Matchup Load (0.0ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND "chefs"."region" = $2[0m  [["bracket_id", 3], ["region", "West"]]
+  ↳ app/models/bracket.rb:16:in `uniq'
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.0ms | Allocations: 21152)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 48834)
+Completed 200 OK in 38ms (Views: 20.3ms | ActiveRecord: 11.5ms | Allocations: 60892)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:30:36 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.2ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.8ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.3ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND (chefs.region = 'West')[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:9:in `each_with_index'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mMatchup Load (0.4ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND (chefs.region = 'East')[0m  [["bracket_id", 3]]
+  ↳ app/views/brackets/show.html.erb:29:in `each_with_index'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mCACHE Chef Load (0.0ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  Rendered brackets/show.html.erb within layouts/application (Duration: 18.5ms | Allocations: 27330)
+  Rendered application/_header.html.erb (Duration: 0.3ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 55010)
+Completed 200 OK in 41ms (Views: 20.7ms | ActiveRecord: 14.5ms | Allocations: 67151)
+
+
+Started GET "/brackets/3" for ::1 at 2024-02-02 16:31:35 -0700
+Processing by BracketsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBracket Load (0.3ms)[0m  [1m[34mSELECT "brackets".* FROM "brackets" WHERE "brackets"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/brackets_controller.rb:64:in `set_bracket'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering brackets/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/brackets/_bracket.html.erb:4
+  Rendered brackets/_bracket.html.erb (Duration: 0.9ms | Allocations: 2154)
+  [1m[36mMatchup Load (0.9ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND (chefs.region = 'West')[0m  [["bracket_id", 3]]
+  ↳ app/models/matchup.rb:6:in `uniq'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 5], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 6], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:13
+  [1m[36mMatchup Load (0.4ms)[0m  [1m[34mSELECT "matchups".* FROM "matchups" INNER JOIN "matchup_chefs" ON "matchup_chefs"."matchup_id" = "matchups"."id" INNER JOIN "chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchups"."bracket_id" = $1 AND (chefs.region = 'East')[0m  [["bracket_id", 3]]
+  ↳ app/models/matchup.rb:6:in `uniq'
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 3], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" ASC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  [1m[36mChef Load (0.1ms)[0m  [1m[34mSELECT "chefs".* FROM "chefs" INNER JOIN "matchup_chefs" ON "chefs"."id" = "matchup_chefs"."chef_id" WHERE "matchup_chefs"."matchup_id" = $1 ORDER BY "chefs"."id" DESC LIMIT $2[0m  [["matchup_id", 4], ["LIMIT", 1]]
+  ↳ app/views/brackets/show.html.erb:33
+  Rendered brackets/show.html.erb within layouts/application (Duration: 17.6ms | Allocations: 21807)
+  Rendered application/_header.html.erb (Duration: 0.2ms | Allocations: 382)
+  Rendered application/_footer.html.erb (Duration: 0.1ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 49483)
+Completed 200 OK in 39ms (Views: 16.7ms | ActiveRecord: 16.5ms | Allocations: 61603)
+
+

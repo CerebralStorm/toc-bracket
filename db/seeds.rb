@@ -11,53 +11,51 @@
 
 
 [
-  'Jet Tila',
-  'Carlos Anthony', 
-  'Brian Malarkey',
-  'Lee Ann Wong',
-  'Nate Appleman',
-  'Adam Sobel',
-  'Brooke Williamson',
-  'Michael Voltaggio',
-  'Tim Hollingsworth',
-  'Aaron May',
-  'Tiffany Derry',
-  'Phillip Frankland Lee',
-  'Crista Luedtke',
-  'Antonia Lofaso',
-  'Shirley Chung',
-  'Chris Cosentino',
-  'Elizabeth Falkner',
-  'Marcel Vigneron',
-  'Joe Sasto',
-  'Maneet Chauhan',
-  'Amanda Freitag',
-  'Tiffani Faison',
-  'Kelsey Barnard Clark',
-  'Eric Adjepong',
-  'Bryan Voltaggio',
-  'Madison Cowan',
-  'Richard Hales',
-  'Christian Petroni',
-  'Michael Psilakis',
-  'Karen Akunowicz',
-  'Justin Sutherland',
-  'Einat Admony',
-  'Tobias Dorzon',
-  'Aarthi Sampath',
-  'Eric Adjepong',
-  'Karen Akunowicz',
-  'Kelsey Barnard Clark',
-  'Tobias Dorzon',
-  'Jose Garces',
-  'Stephanie Izard',
-  'Marc Murphy',
-  'Britt Rescigno',
-  'Jonathon Sawyer,',
-  'Dale Talde',
-  'Shirley Chung',
-  'Mei Lin',
-  'Shota Nakajima',
-  'Joe Sasto',
-  'Casey Thompson'
-].each { |name| Chef.where(name: name).first_or_create }
+  { name: 'Kelsey Barnard Clark', region: 'East' },
+  { name: 'Jose Garces', region: 'East' },
+  { name: 'Stephanie Izard', region: 'East' },
+  { name: 'Marc Murphy', region: 'East' },
+  { name: 'Britt Rescigno', region: 'East' },
+  { name: 'Jonathon Sawyer', region: 'East' },
+  { name: 'Dale Talde', region: 'East' },
+  { name: 'Eric Adjepong', region: 'East' },
+  { name: 'Amanda Freitag', region: 'East' },
+  { name: 'Tiffani Faison', region: 'East' },
+  { name: 'Karen Akunowicz', region: 'East' },
+  { name: 'Tobias Dorzon', region: 'East' },
+  { name: 'Carlos Anthony',  region: 'West' },
+  { name: 'Shirley Chung', region: 'West' },
+  { name: 'Mei Lin', region: 'West' },
+  { name: 'Antonia Lofaso', region: 'West' },
+  { name: 'Crista Luedtke', region: 'West' },
+  { name: 'Brian Malarkey', region: 'West' },
+  { name: 'Shota Nakajima', region: 'West' },
+  { name: 'Joe Sasto', region: 'West' },
+  { name: 'Adam Sobel', region: 'West' },
+  { name: 'Casey Thompson', region: 'West' },
+  { name: 'Jet Tila', region: 'West' },
+  { name: 'Michael Voltaggio', region: 'West' },
+  { name: 'Brooke Williamson', region: 'West' },
+  { name: 'Lee Ann Wong', region: 'West' },
+].each { |attrs| Chef.where(attrs).first_or_create }
+  
+
+# name: 'Nate Appleman', region: 'West'
+# name: 'Tim Hollingsworth', region: 'West'
+# name: 'Aaron May', region: 'West'
+# name: 'Tiffany Derry', region: 'West'
+# name: 'Phillip Frankland Lee', region: 'West'
+# name: 'Shirley Chung', region: 'West'
+# name: 'Chris Cosentino', region: 'West'
+# name: 'Elizabeth Falkner', region: 'West'
+# name: 'Marcel Vigneron', region: 'West' 
+# name: 'Maneet Chauhan', region: 'West'
+# name: 'Kelsey Barnard Clark', region: 'West'
+# name: 'Bryan Voltaggio', region: 'West'
+# name: 'Madison Cowan', region: 'West'
+# name: 'Richard Hales', region: 'West'
+# name: 'Christian Petroni', region: 'West'
+# name: 'Michael Psilakis', region: 'West'
+# name: 'Justin Sutherland', region: 'West'
+# name: 'Einat Admony', region: 'West'
+# name: 'Aarthi Sampath', region: 'West'

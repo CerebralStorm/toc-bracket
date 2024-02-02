@@ -1,5 +1,7 @@
 class Matchup < ApplicationRecord
   belongs_to :bracket
-  has_many :matchup_chefs
+  has_many :matchup_chefs, dependent: :destroy
   has_many :chefs, through: :matchup_chefs
+
+  scope :from_region, -> (region) { joins(:chefs).where('chefs.region = ?', region).uniq }
 end

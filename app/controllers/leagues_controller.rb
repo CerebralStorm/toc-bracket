@@ -3,7 +3,7 @@ class LeaguesController < ApplicationController
 
   # GET /leagues or /leagues.json
   def index
-    @leagues = League.all
+    @leagues = current_user.present? ?  current_user.leagues : League.all
   end
 
   # GET /leagues/1 or /leagues/1.json

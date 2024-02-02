@@ -3,6 +3,7 @@ class CreateMatchupChefs < ActiveRecord::Migration[7.1]
     create_table :matchup_chefs do |t|
       t.integer :matchup_id
       t.integer :chef_id
+      t.integer :seed, :integer
 
       t.timestamps
     end

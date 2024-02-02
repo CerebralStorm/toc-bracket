@@ -23,6 +23,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
 
   create_table "chefs", force: :cascade do |t|
     t.string "name"
+    t.string "region"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,6 +44,8 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
   create_table "matchup_chefs", force: :cascade do |t|
     t.integer "matchup_id"
     t.integer "chef_id"
+    t.integer "seed"
+    t.integer "integer"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
