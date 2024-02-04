@@ -37,6 +37,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
 
   create_table "leagues", force: :cascade do |t|
     t.string "name"
+    t.integer "owner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -52,6 +53,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
 
   create_table "matchups", force: :cascade do |t|
     t.integer "bracket_id"
+    t.integer "winner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

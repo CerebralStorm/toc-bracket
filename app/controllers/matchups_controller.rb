@@ -19,26 +19,11 @@ class MatchupsController < ApplicationController
   def edit
   end
 
-  # POST /matchups or /matchups.json
-  def create
-    @matchup = Matchup.new(matchup_params)
-
-    respond_to do |format|
-      if @matchup.save
-        format.html { redirect_to matchup_url(@matchup), notice: "Matchup was successfully created." }
-        format.json { render :show, status: :created, location: @matchup }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @matchup.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   # PATCH/PUT /matchups/1 or /matchups/1.json
   def update
     respond_to do |format|
       if @matchup.update(matchup_params)
-        format.html { redirect_to matchup_url(@matchup), notice: "Matchup was successfully updated." }
+        format.html { redirect_to bracket_url(@matchup.bracket), notice: "Matchup was successfully updated." }
         format.json { render :show, status: :ok, location: @matchup }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -65,6 +50,6 @@ class MatchupsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def matchup_params
-      params.require(:matchup).permit(:bracket_id)
+      params.require(:matchup).permit(:bracket_id, :winner_id)
     end
 end

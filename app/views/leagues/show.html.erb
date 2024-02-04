@@ -1,5 +1,4 @@
 <div class="container">
-  <p style="color: green"><%= notice %></p>
 
   <%= render @league %>
 
@@ -12,24 +11,33 @@
     <% end %>
   </div>
 
+  <hr> 
+
+  <h3>League Participants</h3>
   <ul class="list-group">
     <% @league.users.each do |user| %>
-      <li class="list-group-item"><%= user.email %></li>
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col">
+            <%= user.email %>
+          </div>
+          <div class="col">
+            <% if current_user.league_bracket(@league).present? %>
+              <%= link_to 'View my bracket', bracket_path(current_user.league_bracket(@league)), class: 'btn btn-secondary' %>
+            <% else %>
+              <%= form_with model: Bracket.new, method: :post do |form| %>
+                <%= form.hidden_field :league_id, value: @league.id %>
+                <%= form.hidden_field :user_id, value: current_user.id %>
+                <%= form.submit "Fill our your bracket", class: 'btn btn-secondary' %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>       
+      </li>
     <% end %>
   </ul>
-
-  </br>
-
-  <% if current_user.league_bracket(@league).present? %>
-    <%= link_to 'View my bracket', bracket_path(current_user.league_bracket(@league)) %>
-  <% else %>
-    <%= form_with model: Bracket.new, method: :post do |form| %>
-      <%= form.hidden_field :league_id, value: @league.id %>
-      <%= form.hidden_field :user_id, value: current_user.id %>
-      <%= form.submit "Fill our your bracket", class: 'btn btn-primary' %>
-    <% end %>
-  <% end %>
 </div>
 </br>
 </br>
 </br>
+

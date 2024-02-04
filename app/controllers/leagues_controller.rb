@@ -1,9 +1,10 @@
 class LeaguesController < ApplicationController
   before_action :set_league, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /leagues or /leagues.json
   def index
-    @leagues = current_user.present? ?  current_user.leagues : League.all
+    @leagues = current_user.leagues
   end
 
   # GET /leagues/1 or /leagues/1.json
@@ -22,7 +23,7 @@ class LeaguesController < ApplicationController
   # POST /leagues or /leagues.json
   def create
     @league = League.new(league_params)
-
+    @league.owner = current_user
     respond_to do |format|
       if @league.save
         format.html { redirect_to league_url(@league), notice: "League was successfully created." }
