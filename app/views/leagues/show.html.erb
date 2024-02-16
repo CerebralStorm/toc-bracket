@@ -22,7 +22,7 @@
             <%= user.email %>
           </div>
           <div class="col">
-            <% if current_user.league_bracket(@league).present? %>
+            <% if current_user.league_bracket(@league).present? && user == current_user %>
               <%= link_to 'View my bracket', bracket_path(current_user.league_bracket(@league)), class: 'btn btn-secondary' %>
             <% else %>
               <%= form_with model: Bracket.new, method: :post do |form| %>
