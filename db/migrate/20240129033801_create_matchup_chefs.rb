@@ -4,6 +4,7 @@ class CreateMatchupChefs < ActiveRecord::Migration[7.1]
       t.integer :matchup_id
       t.integer :chef_id
       t.integer :seed, :integer
+      t.string :region
 
       t.timestamps
     end

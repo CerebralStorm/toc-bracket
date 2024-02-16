@@ -1,68 +1,23 @@
 <div class="container">
-
-  <%= render @bracket %>
-
   <h2>West Matchups</h2>
-  <div class="accordion" id="accordionWest">
-    <% @bracket.matchups_by_region('West').each do |matchup| %>
-      <% first_chef = matchup.chefs.first %>
-      <% second_chef = matchup.chefs.last %>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading<%= matchup.id %>">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= matchup.id %>" aria-expanded="true" aria-controls="collapse<%= matchup.id %>">
-            <%= first_chef.name %> VS <%= second_chef.name %>
-          </button>
-        </h2>
-        <div id="collapse<%= matchup.id %>" class="accordion-collapse collapse" aria-labelledby="heading<%= matchup.id %>" data-bs-parent="#accordionWest">
-          <div class="accordion-body">
-            <h5>Make your pick</h5>
-            <%= form_with(model: matchup) do |form| %>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, first_chef.id %>
-                <%= form.label :winner_id, first_chef.name %>
-              </div>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, second_chef.id %>
-                <%= form.label :winner_id, second_chef.name %>
-              </div>
-              <%= form.submit 'Save', class: 'btn btn-primary' %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    <% end %>
+  <div class="row">
+    <div class="col">
+      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'West A'} %>
+    </div>
+    <div class="col">
+      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'West B'} %>
+    </div>
   </div>
+</div>
+<hr> 
 
-  <hr> 
-
-  <h2>East Matchups</h2>
-  <div class="accordion" id="accordionEast">
-    <% @bracket.matchups_by_region('East').each do |matchup| %>
-      <% first_chef = matchup.chefs.first %>
-      <% second_chef = matchup.chefs.last %>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading<%= matchup.id %>">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= matchup.id %>" aria-expanded="true" aria-controls="collapse<%= matchup.id %>">
-            <%= first_chef.name %> VS <%= second_chef.name %>
-          </button>
-        </h2>
-        <div id="collapse<%= matchup.id %>" class="accordion-collapse collapse" aria-labelledby="heading<%= matchup.id %>" data-bs-parent="#accordionEast">
-          <div class="accordion-body">
-            <h5>Make your pick</h5>
-            <%= form_with(model: matchup) do |form| %>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, first_chef.id %>
-                <%= form.label :winner_id, first_chef.name %>
-              </div>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, second_chef.id %>
-                <%= form.label :winner_id, second_chef.name %>
-              </div>
-              <%= form.submit 'Save', class: 'btn btn-primary' %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    <% end %>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'East A'} %>
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
   </div>
 </div>

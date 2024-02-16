@@ -13,6 +13,6 @@ class Bracket < ApplicationRecord
   end
 
   def matchups_by_region(region)
-    matchups.from_region(region)
+    matchups.order(:created_at).from_region(region)
   end
 end

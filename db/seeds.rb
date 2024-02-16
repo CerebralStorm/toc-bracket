@@ -10,34 +10,34 @@
 #   end
 
 
-[
-  { name: 'Kelsey Barnard Clark', region: 'East' },
-  { name: 'Jose Garces', region: 'East' },
-  { name: 'Stephanie Izard', region: 'East' },
-  { name: 'Marc Murphy', region: 'East' },
-  { name: 'Britt Rescigno', region: 'East' },
-  { name: 'Jonathon Sawyer', region: 'East' },
-  { name: 'Dale Talde', region: 'East' },
-  { name: 'Eric Adjepong', region: 'East' },
-  { name: 'Amanda Freitag', region: 'East' },
-  { name: 'Tiffani Faison', region: 'East' },
-  { name: 'Karen Akunowicz', region: 'East' },
-  { name: 'Tobias Dorzon', region: 'East' },
-  { name: 'Carlos Anthony',  region: 'West' },
-  { name: 'Shirley Chung', region: 'West' },
-  { name: 'Mei Lin', region: 'West' },
-  { name: 'Antonia Lofaso', region: 'West' },
-  { name: 'Crista Luedtke', region: 'West' },
-  { name: 'Brian Malarkey', region: 'West' },
-  { name: 'Shota Nakajima', region: 'West' },
-  { name: 'Joe Sasto', region: 'West' },
-  { name: 'Adam Sobel', region: 'West' },
-  { name: 'Casey Thompson', region: 'West' },
-  { name: 'Jet Tila', region: 'West' },
-  { name: 'Michael Voltaggio', region: 'West' },
-  { name: 'Brooke Williamson', region: 'West' },
-  { name: 'Lee Ann Wong', region: 'West' },
-].each { |attrs| Chef.where(attrs).first_or_create }
+# [
+#   { name: 'Kelsey Barnard Clark', region: 'East' },
+#   { name: 'Jose Garces', region: 'East' },
+#   { name: 'Stephanie Izard', region: 'East' },
+#   { name: 'Marc Murphy', region: 'East' },
+#   { name: 'Britt Rescigno', region: 'East' },
+#   { name: 'Jonathon Sawyer', region: 'East' },
+#   { name: 'Dale Talde', region: 'East' },
+#   { name: 'Eric Adjepong', region: 'East' },
+#   { name: 'Amanda Freitag', region: 'East' },
+#   { name: 'Tiffani Faison', region: 'East' },
+#   { name: 'Karen Akunowicz', region: 'East' },
+#   { name: 'Tobias Dorzon', region: 'East' },
+#   { name: 'Carlos Anthony',  region: 'West' },
+#   { name: 'Shirley Chung', region: 'West' },
+#   { name: 'Mei Lin', region: 'West' },
+#   { name: 'Antonia Lofaso', region: 'West' },
+  
+#   { name: 'Brian ', region: 'West' },
+#   { name: 'Shota Nakajima', region: 'West' },
+#   { name: 'Joe Sasto', region: 'West' },
+#   { name: 'Adam Sobel', region: 'West' },
+#   { name: 'Casey Thompson', region: 'West' },
+#   { name: 'Jet Tila', region: 'West' },
+#   { name: 'Michael Voltaggio', region: 'West' },
+#   { name: 'Brooke Williamson', region: 'West' },
+#   { name: 'Lee Ann Wong', region: 'West' },
+# ].each { |attrs| Chef.where(attrs).first_or_create }
   
 
 # name: 'Nate Appleman', region: 'West'

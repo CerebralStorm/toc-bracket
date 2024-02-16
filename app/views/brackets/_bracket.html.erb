@@ -1,7 +1,30 @@
-<div id="<%= dom_id bracket %>">
-  <p>
-    <strong>Bracket for:</strong>
-    <%= bracket.user.email %>
-  </p>
-
+<h5><%= region %>
+<div class="accordion" id="accordion<%= region %>">
+  <% bracket.matchups_by_region(region).each do |matchup| %>
+    <% first_chef = matchup.chefs.first %>
+    <% second_chef = matchup.chefs.last %>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading<%= matchup.id %>">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= matchup.id %>" aria-expanded="true" aria-controls="collapse<%= matchup.id %>">
+          <%= first_chef.name %> VS <%= second_chef.name %>
+        </button>
+      </h2>
+      <div id="collapse<%= matchup.id %>" aria-labelledby="heading<%= matchup.id %>" data-bs-parent="#accordion<%= region%>">
+        <div class="accordion-body">
+          <h5>Make your pick</h5>
+          <%= form_with(model: matchup) do |form| %>
+            <div class="form-check form-check-inline">
+              <%= form.radio_button :winner_id, first_chef.id %>
+              <%= form.label :winner_id, first_chef.name %>
+            </div>
+            <div class="form-check form-check-inline">
+              <%= form.radio_button :winner_id, second_chef.id %>
+              <%= form.label :winner_id, second_chef.name %>
+            </div>
+            <%= form.submit 'Save', class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
 </div>
