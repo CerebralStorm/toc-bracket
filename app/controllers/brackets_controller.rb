@@ -23,7 +23,7 @@ class BracketsController < ApplicationController
   # POST /brackets or /brackets.json
   def create
     @bracket = Bracket.new(bracket_params)
-
+    @bracket.template_bracket_id = TemplateBracket.current.id
     respond_to do |format|
       if @bracket.save
         format.html { redirect_to bracket_url(@bracket), notice: "Bracket was successfully created." }

@@ -11,6 +11,7 @@ gem 'rails', '~> 7.1.3'
 gem 'rubocop'
 gem 'sprockets-rails'
 gem 'pry'
+gem 'acts_as_tree'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'

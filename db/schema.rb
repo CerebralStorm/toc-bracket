@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
+ActiveRecord::Schema[7.1].define(version: 2024_02_16_041908) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "brackets", force: :cascade do |t|
     t.integer "user_id"
     t.integer "league_id"
+    t.integer "template_bracket_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -46,14 +47,31 @@ ActiveRecord::Schema[7.1].define(version: 2024_01_29_033801) do
     t.integer "chef_id"
     t.integer "seed"
     t.integer "integer"
-    t.string "region"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "matchup_selections", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "bracket_id"
+    t.integer "matchup_id"
+    t.integer "winner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "matchups", force: :cascade do |t|
-    t.integer "bracket_id"
+    t.integer "template_bracket_id"
     t.integer "winner_id"
+    t.integer "parent_id"
+    t.integer "round_number"
+    t.string "region"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "template_brackets", force: :cascade do |t|
+    t.boolean "active", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

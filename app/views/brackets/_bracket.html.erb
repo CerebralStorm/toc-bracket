@@ -12,7 +12,8 @@
       <div id="collapse<%= matchup.id %>" aria-labelledby="heading<%= matchup.id %>" data-bs-parent="#accordion<%= region%>">
         <div class="accordion-body">
           <h5>Make your pick</h5>
-          <%= form_with(model: matchup) do |form| %>
+          <% current_matchup_selection = current_user.matchup_selection(matchup, bracket) %>
+          <%= form_with(model: current_matchup_selection) do |form| %>
             <div class="form-check form-check-inline">
               <%= form.radio_button :winner_id, first_chef.id %>
               <%= form.label :winner_id, first_chef.name %>
