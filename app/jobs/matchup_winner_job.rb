@@ -14,7 +14,6 @@ class MatchupWinnerJob < ApplicationJob
   end
 
   def create_next_matchup
-    if @template_bracket.current_round.matchups
   end
 
   def create_next_round
