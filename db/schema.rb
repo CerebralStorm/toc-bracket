@@ -58,7 +58,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_17_051942) do
     t.integer "winner_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "score"
+    t.float "score", default: 0.0
   end
 
   create_table "matchups", force: :cascade do |t|
