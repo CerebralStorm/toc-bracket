@@ -1,5 +1,8 @@
 class MatchupSelectionsController < ApplicationController
-  before_action :set_matchup_selection, only: %i[ update destroy ]
+  before_action :set_matchup_selection, only: %i[ show update destroy ]
+
+  def show
+  end
 
   def update
     respond_to do |format|
