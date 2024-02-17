@@ -7,4 +7,16 @@ class Bracket < ApplicationRecord
   def matchups_by_region(region)
     Matchup.order(:created_at).from_region(region)
   end
+
+  def matchups_by_round_and_region(round, region)
+    Matchup.order(:created_at).where(round_number: round).from_region(region).uniq
+  end
+
+  def rounds
+    Matchup.pluck(:round_number).uniq.sort
+  end
+
+  def score
+    matchup_selections.sum(&:score)
+  end
 end

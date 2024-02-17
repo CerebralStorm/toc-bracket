@@ -1,23 +1,37 @@
 <div class="container">
+  <ul class="nav nav-tabs">
+    <% @bracket.rounds.each do |round| %>
+      <li class="nav-item">
+        <a class="nav-link <%= "active" if round == @round_number %>" aria-current="page" href="<%= "/brackets/#{@bracket.id}?round_number=#{round}" %>">Round <%= round %></a>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<br />
+
+<div class="container">
   <h2>West Matchups</h2>
   <div class="row">
     <div class="col">
-      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'West A'} %>
+      <%= render partial: "bracket", locals: {bracket: @bracket, round_number: @round_number, region: 'West A'} %>
     </div>
     <div class="col">
-      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'West B'} %>
+      <%= render partial: "bracket", locals: {bracket: @bracket, round_number: @round_number, region: 'West B'} %>
     </div>
   </div>
 </div>
+
 <hr> 
 
 <div class="container">
+  <h2>East Matchups</h2>
   <div class="row">
     <div class="col">
-      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'East A'} %>
+      <%= render partial: "bracket", locals: {bracket: @bracket, round_number: @round_number, region: 'East A'} %>
     </div>
     <div class="col">
-      <%= render partial: "bracket", locals: {bracket: @bracket, region: 'East B'} %>
+      <%= render partial: "bracket", locals: {bracket: @bracket, round_number: @round_number, region: 'East B'} %>
     </div>
   </div>
 </div>

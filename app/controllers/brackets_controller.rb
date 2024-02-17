@@ -9,6 +9,8 @@ class BracketsController < ApplicationController
 
   # GET /brackets/1 or /brackets/1.json
   def show
+    cookies[:round_number] = params[:round_number] || 1
+    @round_number = cookies[:round_number]
   end
 
   # GET /brackets/new

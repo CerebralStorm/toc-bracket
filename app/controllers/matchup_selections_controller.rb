@@ -4,7 +4,7 @@ class MatchupSelectionsController < ApplicationController
   def update
     respond_to do |format|
       if @matchup_selection.update(matchup_selection_params)
-        format.html { redirect_to bracket_url(@matchup_selection.bracket), notice: "Matchup was successfully updated." }
+        format.html { redirect_to bracket_url(@matchup_selection.bracket, round_number: cookies[:round_number]), notice: "Matchup was successfully updated." }
         format.json { render :show, status: :ok, location: @matchup_selection }
       else
         format.html { render :edit, status: :unprocessable_entity }
