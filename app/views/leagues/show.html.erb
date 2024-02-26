@@ -36,7 +36,7 @@
           </div>
           <div class="col">
             <% if current_user.league_bracket(@league).present? %>
-              <h6>Score: <%= current_user.league_bracket(@league).score %></h6>
+              <h6>Score: <%= user.league_bracket(@league).score %></h6>
             <% end %>
           </div>
         </div>       
