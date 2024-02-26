@@ -20,15 +20,17 @@
           <% elsif first_matchup_chef.present? && second_matchup_chef.present? %> 
             <h6>Make your pick</h6>
             <% current_matchup_selection = bracket.user.matchup_selection(matchup, bracket) %>
-            <%= form_with(model: current_matchup_selection) do |form| %>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, first_chef.id, onclick: "handleMatchupClick(this);", "data-matchup-id" => current_matchup_selection.id, "data-bracket-id" => bracket.id %>
-                <%= form.label :winner_id, first_chef.name %>
-              </div>
-              <div class="form-check form-check-inline">
-                <%= form.radio_button :winner_id, second_chef.id, onclick: "handleMatchupClick(this);", "data-matchup-id" => current_matchup_selection.id, "data-bracket-id" => bracket.id %>
-                <%= form.label :winner_id, second_chef.name %>
-              </div>
+            <% if bracket.user == current_user %>
+              <%= form_with(model: current_matchup_selection) do |form| %>
+                <div class="form-check form-check-inline">
+                  <%= form.radio_button :winner_id, first_chef.id, onclick: "handleMatchupClick(this);", "data-matchup-id" => current_matchup_selection.id, "data-bracket-id" => bracket.id %>
+                  <%= form.label :winner_id, first_chef.name %>
+                </div>
+                <div class="form-check form-check-inline">
+                  <%= form.radio_button :winner_id, second_chef.id, onclick: "handleMatchupClick(this);", "data-matchup-id" => current_matchup_selection.id, "data-bracket-id" => bracket.id %>
+                  <%= form.label :winner_id, second_chef.name %>
+                </div>
+              <% end %>
             <% end %>
           <% end %>
         </div>
