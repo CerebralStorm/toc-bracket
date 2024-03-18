@@ -1,4 +1,5 @@
 class MatchupSelectionsController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   before_action :set_matchup_selection, only: %i[ show update destroy ]
 
   def show
