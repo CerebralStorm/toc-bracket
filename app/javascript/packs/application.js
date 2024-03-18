@@ -13,7 +13,7 @@ window.handleMatchupClick = function handleMatchupClick(radioButton) {
     }
   }
 
-  let csrfToken = document.getElementsByName("authenticity_token")[0].value
+  let csrfToken = ENV.csrf_token
   let config = {
     headers: {
       "Accept": 'application/json',
